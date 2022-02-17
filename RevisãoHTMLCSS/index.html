@@ -6,7 +6,16 @@
         <meta charset="utf-8">
         <link href="style.css" rel="stylesheet">
         <style>
-            body{background:red}
+            body{
+                background:rgb(14, 14, 14);
+                color: rgb(43, 255, 0);
+            }
+            .estilo-campos{
+                background: green;
+            }
+            #descricao{
+                background: yellow;
+            }
         </style>
     </head>
     
@@ -44,6 +53,45 @@
                     <p>Este é um <span class="texto-vermelho">bloco de conteúdo</span></p>
                 </div>
                 <hr/>
+
+                <table>
+                    <caption>Legenda</caption>
+                    <thead>
+                        <tr>
+                            <th colspan="2">TABELA EXEMPLO</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Valor 1</td>
+                            <td>Valor 2</td>
+                        </tr>
+                        <tr>
+                            <td>Valor 3</td>
+                            <td>Valor 4</td>
+                        </tr>
+                    </tbody>
+                    <tfooter>
+                        <tr>
+                            <td colspan="2">Rodapés</td>
+                        </tr>
+                    </tfooter>
+                </table>
+
+                <form action="" method="">
+                    <label for="nome">Insira seu nome:</label>
+                    <input type="text" name="nome" id="nome" class="estilo-campos"/>
+                    <label for="email">Insira seu email:</label>
+                    <input type="email" name="email" id="email" class="estilo-campos"/>
+                    <label for="descricao">Fale sobre você:</label>
+                    <textarea name="descricao" id="descricao"></textarea>
+                    <label for="estado">Informe seu estado:</label>
+                    <select name="estado" id="estado">
+                        <option value="SP">São Paulo</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                    </select>
+                </form>
+
             </section>
         </main>
 
