@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -10,29 +11,77 @@
 
     <title>Hello, world!</title>
   </head>
+
   <body class="container">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <h1>Hello, world!</h1>
 
-    <div class="row">
+    <!--<div class="row">
         <div class="col-2">Coluna 1</div>
-        <div class="col-7">Coluna 2</div>
+        <div class="col-7">
+          <div class="col-6">Coluna</div>
+          <div class="col-8">Coluna</div>
+        </div>
         <div class="col-3">Coluna 3</div>
+    </div>-->
+
+    <div class="row">
+        <div class="col">
+          <label for="email" class="label-control">
+            Informe seu Email:
+          </label>
+          <input type="email" class="form-control"
+            id="email" name="email"/>
+        </div>
+
+        <div class="col">
+          <label for="senha" class="label-control">
+            Informe sua senha:
+          </label>
+          <input type="password" class="form-control"
+            id="senha" name="senha"/>
+        </div>
+
+        <div class="col">
+            <label for="cartao" class="label-control">
+              Informe todas as suas informações pessoais:
+            </label>
+            <input type="text" class="form-control"
+              id="cartao" name="cartao"/>
+          </div>
     </div>
 
     <div class="row">
-        <div class="col">Coluna 1</div>
-        <div class="col">Coluna 2</div>
+      <div class="col d-flex justify-content-end">
+        <button type="submit" 
+          class="btn btn-info mt-3 mb-1">
+          Enviar
+        </button>
+      </div>
     </div>
 
-    <!-- Optional JavaScript; choose one of the two! -->
+    <hr>
+    <h4>Classes Tabela</h4>
+    <table class="table table-primary table-hover table-responsive">
+      <thead>
+        <tr>
+          <td>Coluna 1</td>
+          <td>Coluna 2</td>
+        </tr>
+      </thead>
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      <tbody>
+        <tr>
+          <td>Dados</td>
+          <td>Dados</td>
+        </tr>
+        <tr>
+            <td>Dados</td>
+            <td>Dados</td>
+          </tr>
+      </tbody>
+    </table>
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    -->
   </body>
+
 </html>
