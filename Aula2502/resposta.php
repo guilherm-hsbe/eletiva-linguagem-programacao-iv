@@ -25,7 +25,7 @@
       echo "<br/> Multiplicação: ".($valor1 * $valor2);
 
       if ($valor2 != 0){
-        echo "Divisão: "($valor1 / $valor2); }
+        echo "Divisão: "($valor1 / $valor2);}
 
       else{
         echo "Não é possível realizar divisão por 0!";}
