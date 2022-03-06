@@ -20,18 +20,28 @@
         Valor 2 é: $valor2 <br/>";
 
       #expressões aritméticas podem ser executadas dentro de "echo";
-      echo "<br/> Soma: ."($valor1 + $valor2);
+      echo "<br/> Soma: ".($valor1 + $valor2);
       echo "<br/> Subtração: ".($valor1 - $valor2);
       echo "<br/> Multiplicação: ".($valor1 * $valor2);
 
-      if ($valor2 != 0){
-        echo "Divisão: "($valor1 / $valor2);}
+      if ($valor2 != 0)
+        echo "Divisão: "($valor1 / $valor2);
 
-      else{
-        echo "Não é possível realizar divisão por 0!";}
+      else
+        echo "Não é possível realizar divisão por 0!";
 
-      if ($valor1 % 2 == 0){
-        echo "Valor 1 é par!";}        
+      if ($valor1 % 2 == 0)
+        echo "Valor 1 é par!";
+        
+      else
+        echo "Valor é ímpar";
+
+      $resultado = $valor1 % 2 == 0 ? "Valor 1 é par!"
+                  : "Valor 1 é ímpar";
+      echo $resultado;
+
+      for ($i=0; $i<10; $i++)
+        echo "Valor de i: $i <br/>"
     ?>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
