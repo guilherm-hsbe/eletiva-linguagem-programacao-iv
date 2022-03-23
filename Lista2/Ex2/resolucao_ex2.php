@@ -12,25 +12,31 @@
     <h3>Cálculo Exercício 2</h3>
 
     <?php
+      //leitura mapa
       for ($i=1; $i<=20; $i++){
           $vet[$i] = $_POST["vl$i"];
       }
 
-      if ($vet[$i] >= 1 and $vet[$i] <= 10){
-          echo "a";
+      //apresentar mapa
+      foreach($vet as $posicao => $vl){
+          echo "Posição $posicao / Valor: $vl<br/>";}
+
+      //leitura valor escolhido
+      $vlesc = $_POST['vlesc'];
+      $posesc = 0;
+
+      //função valor escolhido
+      foreach($vet as $pos => $vl){
+        if ($vl == $vlesc){
+            $vlesc = $vl;
+            $posesc = $pos;
+            echo "<br/>O valor escolhido existe e pertence à posição $posesc, com valor de: $vlesc!";
+        }
       }
 
-      /* /var_dump($vetor);
-      foreach($vetor as $chave => $valor){
-          echo "#Pos ($chave) Val ($valor)<br/><br/>";
-
-          if ($valor > $maior){
-            $maior = $valor;
-            $posicao = $chave;
-          }
-      }
-
-      echo "<br/>Maior valor: Pos ($posicao) Val ($maior)"; */
+      if ($posesc == 0){
+            echo "<br/>O valor não existe!";
+        }      
     ?>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
