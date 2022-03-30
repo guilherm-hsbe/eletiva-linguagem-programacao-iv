@@ -20,48 +20,43 @@
           <div class="modal-dialog">
             <div class="modal-content">
 
-              <!--Acessar-->
+              <!--Topo-->
               <div class="modal-header">
                   <h5 class="modal-title">Acessar</h5>
               </div>
 
               <!--Formulário-->
               <div class="modal-body">
-                  <form action="resposta.php" method="post">
+                <form action="resposta.php" method="post"><!--Form {-->
 
-                    <!--Email-->
-                    <div class="row">
-                      <div class="col">
-                        <lable for="email" class="label-control">
-                          Informe o email
-                        </lable>
-                        <input type="email" name="email" id="email" class="form-control">
-                      </div>
+                  <!--Email-->
+                  <div class="row">
+                    <div class="col">
+                      <label for="email" class="label-control">Informe o email</label>
+                      <input type="email" name="email" id="email" class="form-control">
                     </div>
+                  </div>
 
-                    <!--Senha-->
-                    <div class="row mt-3 mb-2">
-                      <div class="col">
-                        <lable for="pass" class="label-control">
-                          Informe a senha
-                        </lable>
-                        <input type="password" name="pass" id="pass" class="form-control">
-                      </div>
+                  <!--Senha-->
+                  <div class="row mt-3 mb-2">
+                    <div class="col">
+                      <label for="pass" class="label-control">Informe a senha</label>
+                      <input type="password" name="pass" id="pass" class="form-control">
                     </div>
-
-                  </form>
+                  </div>                 
               </div>
 
+              <!--Submit-->
               <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-warning">Save changes</button>
+                  <button type="submit" class="btn btn-warning">Acessar</button>
+                  </form><!--Form }-->
               </div>
 
             </div>
           </div>
         </div>
       </div>
-      <!--}-->
+      <!--Modal }-->
 
       <div class="col"></div>
     </div>
