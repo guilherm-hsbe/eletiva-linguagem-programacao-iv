@@ -13,24 +13,24 @@
     <h4>Menor Número</h4>
 
     <?php
-        //Função
-        function menorNumero($nUm,$nDois){
-            if ($nUm < $nDois)
-                echo "Menor Número: $nUm";
+      //Função
+      function menorNumero($nUm,$nDois){
+          if ($nUm < $nDois)
+              echo "Menor Número: $nUm";
 
-            elseif ($nDois < $nUm)
-                echo "Menor Número: $nDois";
+          elseif ($nDois < $nUm)
+              echo "Menor Número: $nDois";
 
-            else
-                echo "Os números são iguais!";
-        }          
+          else
+              echo "Os números são iguais!";
+      }          
 
-        //POST
-        $nUm = $_POST['nUm'];
-        $nDois = $_POST['nDois'];
+      //POST
+      $nUm = $_POST['nUm'];
+      $nDois = $_POST['nDois'];
 
-        //Chamada Função
-        menorNumero($nUm,$nDois);
+      //Chamada Função
+      menorNumero($nUm,$nDois);
     ?> 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
