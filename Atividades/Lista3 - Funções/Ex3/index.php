@@ -5,26 +5,24 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-        <title>Form Ex2</title>
+        <title>Form Ex3</title>
     </head>
 
     <body class="container mt-4">
-        <h1>Exercício 2</h1>
-        <h4>Ordem Alfabética</h4>
+        <h1>Exercício 3</h1>
+        <h4>Menor Número</h4>
 
-        <form class="mt-3 p-4 border border-light border-2 rounded" method="post" action="resposta_ex2.php">
+        <form class="mt-3 p-4 border border-light border-2 rounded" method="post" action="resposta_ex3.php">
             <div class="row">
-
-                <?php 
-                    for ($i=1; $i<=10; $i++){ 
-                ?>
                     <div class="col">
-                        <label for="nome<?=$i?>" class="label-control"> Nome: </label>
-                        <input type="text" name="nome<?=$i?>" id="nome<?=$i?>" class="form-control"/>
+                        <label for="nUm<?=$i?>" class="label-control"> Informe um Número Inteiro: </label>
+                        <input type="number" name="nUm" id="nUm" class="form-control"/>
                     </div>
-                <?php 
-                    }
-                ?>
+
+                    <div class="col">
+                        <label for="nDois" class="label-control"> Informe outro Número Inteiro: </label>
+                        <input type="number" name="nDois" id="nDois" class="form-control"/>
+                    </div>
             </div>
 
             <div class="row">
@@ -38,5 +36,4 @@
     </body>
 </html>
 
-<!--Faça um programa que leia o nome de 10 alunos de uma turma e que ao enviar esses nomes eles
-sejam apresentados em ordem alfabética-->
+<!--Escreva um programa que leia dois números inteiros e uma função que retorne o menor número entre eles.-->

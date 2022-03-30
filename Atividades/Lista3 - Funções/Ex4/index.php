@@ -5,24 +5,24 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-        <title>Form Ex2</title>
+        <title>Form Ex4</title>
     </head>
 
     <body class="container mt-4">
-        <h1>Exercício 2</h1>
-        <h4>Ordem Alfabética</h4>
+        <h1>Exercício 4</h1>
+        <h4>Divisores</h4>
 
-        <form class="mt-3 p-4 border border-light border-2 rounded" method="post" action="resposta_ex2.php">
+        <form class="mt-3 p-4 border border-light border-2 rounded" method="post" action="resposta_ex4.php">
             <div class="row">
 
-                <?php 
-                    for ($i=1; $i<=10; $i++){ 
+                <?php
+                    for ($i=1; $i<=5; $i++){
                 ?>
                     <div class="col">
-                        <label for="nome<?=$i?>" class="label-control"> Nome: </label>
-                        <input type="text" name="nome<?=$i?>" id="nome<?=$i?>" class="form-control"/>
+                        <label for="n<?=$i?>" class="label-control"> Informe Número: </label>
+                        <input type="number" name="n<?=$i?>" id="n<?=$i?>" class="form-control"/>
                     </div>
-                <?php 
+                <?php
                     }
                 ?>
             </div>
@@ -38,5 +38,6 @@
     </body>
 </html>
 
-<!--Faça um programa que leia o nome de 10 alunos de uma turma e que ao enviar esses nomes eles
-sejam apresentados em ordem alfabética-->
+<!--Escreva um programa que leia 5 números inteiros positivos. 
+Para cada número informado, utilize uma função que escreva a soma de seus divisores (exceto ele mesmo).
+Exemplo: divisores de 8: 1+2+4 = 7.-->

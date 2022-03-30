@@ -9,7 +9,8 @@
     </head>
 
     <body class="container mt-4">
-        <h1>Ex1</h1>
+        <h1>Exercício 1</h1>
+        <h4>Validação de Data</h4>
 
         <form class="mt-3 p-4 border border-light border-2 rounded" method="post" action="resposta_ex1.php">
             <div class="row">
@@ -39,3 +40,6 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     </body>
 </html>
+
+<!--Faça um programa que leia uma data e verifique se ela é válida. 
+Além disso informe ao usuário seu respectivo dia da semana.-->
