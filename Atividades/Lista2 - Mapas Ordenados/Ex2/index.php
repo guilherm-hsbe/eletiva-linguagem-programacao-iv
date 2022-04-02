@@ -53,3 +53,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   </body>
 </html>
+
+<!--2 - Escreva um programa que leia 20 valores inteiros entre 1 e 10 e insira-os
+em um mapa ordenado. Depois, o usuário deverá indicar um valor e o
+programa deverá indicar em que posição ou posições onde se encontra esse
+mesmo valor.-->

@@ -20,7 +20,8 @@
                 for ($n=1; $n<$v; $n++){
                     if ($v % $n == 0)
                         $s = $s + $n;
-                echo "- Divisores de $v: $s <br/>";}
+                }
+                echo "- Soma dos divisores de $v: $s <br/>";
             }
         }          
 
