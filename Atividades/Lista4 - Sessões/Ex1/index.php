@@ -12,25 +12,55 @@
         <h1>Exercício 1</h1>
         <h4>Corrida de Automóveis</h4>
 
-        <form class="mt-3 p-4 border border-light border-2 rounded" method="post" action="resposta_ex5.php">
-            <div class="row">
-                <div class="col">
-                    <label for="altura" class="label-control"> Informe sua Altura (cm): </label>
-                    <input type="number" name="altura" id="altura" class="form-control"/>
-                </div>
+        <div class="row">
+            <div class="col"></div>
 
-                <div class="col">
-                    <label for="peso" class="label-control"> Informe o seu Peso (kg): </label>
-                    <input type="number" name="peso" id="peso" class="form-control"/>
+            <!--Modal {-->
+            <div class="col">
+                <div class="modal" tabindex="-1" style="display: block;">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+
+                            <!--Topo-->
+                            <div class="modal-header">
+                                <h5 class="modal-title">Acessar</h5>
+                            </div>
+
+                            <!--Formulário-->
+                            <div class="modal-body">
+                                <form action="resposta.php" method="post"><!--Form {-->
+
+                                <!--Email-->
+                                <div class="row">
+                                    <div class="col">
+                                        <label for="email" class="label-control">Informe o email</label>
+                                        <input type="email" name="email" id="email" class="form-control">
+                                    </div>
+                                </div>
+
+                                <!--Senha-->
+                                <div class="row mt-3 mb-2">
+                                    <div class="col">
+                                        <label for="pass" class="label-control">Informe a senha</label>
+                                        <input type="password" name="pass" id="pass" class="form-control">
+                                    </div>
+                                </div>                 
+                            </div>
+
+                            <!--Submit-->
+                            <div class="modal-footer">
+                                <button type="submit" class="btn btn-warning">Acessar</button>
+                                </form><!--Form }-->
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
             </div>
+            <!--Modal }-->
 
-            <div class="row">
-                <div class="col mt-4">
-                    <button type="submit" class="btn btn-warning"> Enviar </button>
-                </div>
-            </div>
-        </form>
+      <div class="col"></div>
+    </div>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     </body>
