@@ -23,19 +23,30 @@
 
                             <!--Topo-->
                             <div class="modal-header">
-                                <h5 class="modal-title">Formulário da Corrida</h5>
+                                <h5 class="modal-title">Número de Voltas</h5>
                             </div>
 
                             <!--Formulário-->
                             <div class="modal-body">
-                                <form action="tempo_voltas.php" method="post"><!--Form {-->
+                                <form action="numerovoltas.php" method="post"><!--Form {-->
                                     <!--Tempo das voltas-->
-                                    <div class="row mt-3 mb-2">          
-                                        <div class="col">
-                                            <label for="nVoltas" class="label-control">Informe o número de voltas</label>
-                                            <input type="number" name="nVoltas" id="nVoltas" class="form-control">
-                                        </div>
+                                    <div class="row mt-3 mb-2">
+
+                                        <?php
+                                            $nVoltas = $_POST['nVoltas'];
+                                            for ($i=0; $i<=$nVoltas; $i++){
+                                                if ($i == $nVoltas){
+                                        ?>
+                                            <div class="col">
+                                                <label for="tVoltas<?=$i?>" class="label-control">Informe o número de voltas</label>
+                                                <input type="number" name="tVoltas<?=$i?>" id="tVoltas<?=$i?>" class="form-control">
+                                            </div>
+                                        <?php 
+                                            }}
+                                        ?>
                                     </div>
+                            </div>                 
+                        </div>
 
                             <!--Submit-->
                             <div class="modal-footer">
