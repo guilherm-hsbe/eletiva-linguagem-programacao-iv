@@ -23,26 +23,26 @@
 
                             <!--Topo-->
                             <div class="modal-header">
-                                <h5 class="modal-title">Número de Voltas</h5>
+                                <h5 class="modal-title">Formulário da Corrida</h5>
                             </div>
 
                             <!--Formulário-->
                             <div class="modal-body">
-                                <form action="numerovoltas.php" method="post"><!--Form {-->
+                                <form action="resposta.php" method="post"><!--Form {-->
                                     <!--Tempo das voltas-->
                                     <div class="row mt-3 mb-2">
 
                                         <?php
-                                            $nVoltas = $_POST['nVoltas'];
-                                            for ($i=0; $i<=$nVoltas; $i++){
-                                                if ($i == $nVoltas){
+                                            session_start();
+                                            $_SESSION['nVoltas'] = $nVoltas;
+                                            for ($i=1; $i<=$nVoltas; $i++){
                                         ?>
                                             <div class="col">
-                                                <label for="tVoltas<?=$i?>" class="label-control">Informe o número de voltas</label>
+                                                <label for="tVoltas<?=$i?>" class="label-control">Tempo da volta <?=$i?></label>
                                                 <input type="number" name="tVoltas<?=$i?>" id="tVoltas<?=$i?>" class="form-control">
                                             </div>
                                         <?php 
-                                            }}
+                                            }
                                         ?>
                                     </div>
                             </div>                 
