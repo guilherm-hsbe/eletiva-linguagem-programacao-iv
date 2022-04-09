@@ -45,8 +45,5 @@
   </body>
 </html>
 
-<!--
-5)
-Crie um programa que ordene uma matriz de 10 elementos por ordem
-crescente e decrescente.
--->
+<!--Crie um programa que ordene uma matriz de 10 elementos por ordem
+crescente e decrescente.-->

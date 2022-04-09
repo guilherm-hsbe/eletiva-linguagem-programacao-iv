@@ -45,8 +45,5 @@
   </body>
 </html>
 
-<!--
-4)
-Crie um programa que leia 10 números reais, coloque-os num mapa
-ordenado e calcule a sua média.
--->
+<!--Crie um programa que leia 10 números reais, coloque-os num mapa
+ordenado e calcule a sua média.-->
