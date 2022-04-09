@@ -18,9 +18,24 @@
         }
 
         //função
-        foreach($vet as $pos => $vl)
+        echo "Mapa ordenado: ";
+        foreach($vet as $valor)
           {
-            
+            $cont = 0;
+            $valorIgual = $valor;
+
+            foreach($vet as $v){
+              if($valorIgual == $v){
+                $cont++;
+
+                if($cont > 1){
+                  $valor = "-";
+                  $v = "-";
+                }
+              }
+            }
+
+             echo "$valor";
           }
     ?>
 
