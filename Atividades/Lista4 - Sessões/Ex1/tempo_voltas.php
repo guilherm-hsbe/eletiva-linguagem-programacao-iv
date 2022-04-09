@@ -29,12 +29,17 @@
                             <!--Formulário-->
                             <div class="modal-body">
                                 <form action="resposta.php" method="post"><!--Form {-->
+                                    <div class="row">
+                                        <div class="col">(Usar em Segundos)</div>
+                                    </div>
+
+                                    <hr>
+
                                     <!--Tempo das voltas-->
                                     <div class="row mt-3 mb-2">
 
                                         <?php
-                                            session_start();
-                                            $_SESSION['nVoltas'] = $nVoltas;
+                                            $nVoltas = $_POST['nVoltas'];
                                             for ($i=1; $i<=$nVoltas; $i++){
                                         ?>
                                             <div class="col">
@@ -43,24 +48,23 @@
                                             </div>
                                         <?php 
                                             }
+                                            session_start();
+                                            $_SESSION['nVoltas'] = $nVoltas;
                                         ?>
                                     </div>
-                            </div>                 
-                        </div>
-
+                            </div> 
+                            
                             <!--Submit-->
                             <div class="modal-footer">
                                 <button type="submit" class="btn btn-success">Enviar</button>
                                 </form><!--Form }-->
                             </div>
-
                         </div>
                     </div>
                 </div>
             </div>
-            <!--Modal }-->
-
-      <div class="col"></div>
+        </div>
+        <!--Modal }-->
     </div>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

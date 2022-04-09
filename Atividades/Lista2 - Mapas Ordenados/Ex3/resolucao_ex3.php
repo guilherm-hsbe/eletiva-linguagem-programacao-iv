@@ -6,10 +6,11 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <title>Cálculo Exercício 3</title>
+    <title>PHP Ex3</title>
   </head>
   <body class="container mt-5 p-4 border border-light border-2 rounded">
-    <h3>Cálculo Exercício 3</h3>
+    <h1>Exercício 3</h1>
+    <h4>Hífen</h4>
 
     <?php
         //leitura mapa
@@ -43,10 +44,7 @@
   </body>
 </html>
 
-<!--
-3)
-Crie um programa que leia um conjunto de valores inteiros do usuário e os
+<!--Crie um programa que leia um conjunto de valores inteiros do usuário e os
 coloque em um mapa ordenado. Caso o usuário informe valores repetidos,
 esses valores devem ser substituídos por hífen (-). 
-Exiba o resultado final desse mapa ao usuário
--->
+Exiba o resultado final desse mapa ao usuário-->

@@ -6,10 +6,11 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <title>Envio de Formulário - Exercício 1</title>
+    <title>Form Ex1</title>
   </head>
   <body class="container mt-4">
-    <h3>Exercício 1</h3>
+    <h1>Exercício 1</h1>
+    <h4>Maior Valor</h4>
 
     <form class="mt-3 p-4 border border-light border-2 rounded" method="post" action="resolucao_ex1.php">
       <div class="row"><!--linhainput-->
@@ -41,5 +42,5 @@
   </body>
 </html>
 
-<!--1 - Escreva um programa que procure e indique o maior valor (e a respetiva
+<!--Escreva um programa que procure e indique o maior valor (e a respetiva
 posição) de um mapa ordenado de 10 posições introduzido pelo usuário.-->

@@ -6,10 +6,11 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <title>Cálculo Exercício 1</title>
+    <title>PHP Ex1</title>
   </head>
   <body class="container mt-5 p-4 border border-light border-2 rounded">
-    <h3>Cálculo Exercício 1</h3>
+    <h1>Exercício 1</h1>
+    <h4>Maior Valor</h4>
 
     <?php
       for ($i=1; $i<=10; $i++){
@@ -36,5 +37,5 @@
   </body>
 </html>
 
-<!--1 - Escreva um programa que procure e indique o maior valor (e a respetiva
+<!--Escreva um programa que procure e indique o maior valor (e a respetiva
 posição) de um mapa ordenado de 10 posições introduzido pelo usuário.-->

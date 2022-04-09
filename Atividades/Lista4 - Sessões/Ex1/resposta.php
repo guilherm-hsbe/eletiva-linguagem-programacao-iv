@@ -15,14 +15,26 @@
     <?php         
         //Receber Variáveis 
         session_start();
-        $_SESSION['nVoltas'] = $nVoltas;
+        $nVoltas = $_SESSION['nVoltas'];
 
         for ($i=1; $i<=$nVoltas; $i++){
             $tVoltas[$i] = $_POST["tVoltas$i"];
         }
 
-        asort($tVoltas);
-        echo "$tVoltas[1]";
+        //Melhor Tempo
+        $melhorTempo = 9999;
+        $melhorVolta = 0;
+        foreach($tVoltas as $chave => $valor){
+          if($melhorTempo >= $valor){
+            $melhorTempo = $valor;
+            $melhorVolta = $chave;
+          }
+        }
+
+        echo "Melhor tempo: $melhorTempo <br/>
+              Volta: $melhorVolta";
+        
+        //Tempo Média das Voltas
     ?>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
