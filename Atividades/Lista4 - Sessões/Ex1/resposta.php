@@ -22,10 +22,11 @@
         }
 
         //Melhor Tempo
-        $melhorTempo = 9999;
         $melhorVolta = 0;
         foreach($tVoltas as $chave => $valor){
-          if($melhorTempo >= $valor){
+          $melhorTempo = $valor;
+
+          if($melhorTempo < $valor){
             $melhorTempo = $valor;
             $melhorVolta = $chave;
           }
