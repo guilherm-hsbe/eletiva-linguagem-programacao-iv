@@ -1,0 +1,16 @@
+{
+    "name": "aluno/projeto-php",
+    "description": "Este e um exemplo de projeto usando PHP e MySQL",
+    "autoload": {
+        "psr-4": {
+            "Aluno\\ProjetoPhp\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Guilherme Henrique",
+            "email": "guilherm3hsb@gmail.com"
+        }
+    ],
+    "require": {}
+}
