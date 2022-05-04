@@ -24,7 +24,7 @@
             $valCheque[$i] = $_POST["valCheque$i"];
             $somaCheque += $valCheque[$i];
         }
-        echo "Soma Total do Valor de cada Cheque: R$ $somaCheque <br/>";
+        echo "Soma Total do Valor do(s) Cheque(s): R$ $somaCheque <br/>";
 
         //IMPRIMIR
         if($somaCheque == $somaLote)
