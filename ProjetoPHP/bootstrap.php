@@ -1,5 +1,8 @@
 <?php
-    require_once __DIR__."/vendor/autoload.php";
+
+use Aluno\ProjetoPhp\Controller\ExercicioController;
+
+require_once __DIR__."/vendor/autoload.php";
 
     /*Recuperar o que o usuário digitou;
     E qual método HTTP ele utilizou;*/
@@ -14,6 +17,13 @@
     $router->get('/ola-mundo', function(){
        return "Olá Mundo!"; 
     });
+
+    //$router->get('/exemplo',ExercicioController::exibir());
+    $router->get('/exemplo',
+    'Aluno\ProjetoPhp\Controller\ExercicioController::exibir');
+
+    $router->post('/exemplo-resultado',
+    'Aluno\ProjetoPhp\Controller\ExercicioController::exibirResultado');
     //Fim Rotas Válidas;
 
     //Checa as entradas do usuário;
