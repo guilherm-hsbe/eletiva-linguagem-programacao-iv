@@ -28,8 +28,20 @@
             }
         }
 
-        public function consultar(){}
+        public function consultar(){
+            try{
+                $sql = "SELECT * FROM clientes";
+            } catch(\Exception $e){
+                return false;
+            }
+        }
 
-        public function consultarPorId($id){}
+        public function consultarPorId($id){
+            try{
+                $sql = "SELECT * FROM clientes WHERE id = :id";
+            } catch(\Exception $e){
+                return false;
+            }
+        }
     }
 ?>
