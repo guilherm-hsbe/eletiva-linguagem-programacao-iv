@@ -10,7 +10,7 @@
 
         //Get/Set
             //Id
-        public function getTd(){
+        public function getId(){
             return $this->id; 
         }
         public function setId($id){

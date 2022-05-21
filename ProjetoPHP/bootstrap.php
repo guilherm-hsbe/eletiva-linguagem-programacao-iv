@@ -18,12 +18,19 @@ require_once __DIR__."/vendor/autoload.php";
        return "Olá Mundo!"; 
     });
 
-    //$router->get('/exemplo',ExercicioController::exibir());
+        //$router->get('/exemplo',ExercicioController::exibir());
     $router->get('/exemplo',
     'Aluno\ProjetoPhp\Controller\ExercicioController::exibir');
 
     $router->post('/exemplo-resultado',
     'Aluno\ProjetoPhp\Controller\ExercicioController::exibirResultado');
+
+        //rotas BD Clientes
+    $router->get('/cliente/novo',
+    'Aluno\ProjetoPhp\Controller\ClientesController::abrirFormularioInserir');
+
+    $router->post('cliente/inserir',
+    'Aluno\ProjetoPhp\Controller\ClientesController::inserirCliente');
     //Fim Rotas Válidas;
 
     //Checa as entradas do usuário;
