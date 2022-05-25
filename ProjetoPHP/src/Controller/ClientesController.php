@@ -21,8 +21,10 @@
 
             $dao = new ClientesDAO();
             if ($dao->inserir($cliente)){
-                return "Inserido com sucesso!";
-            } return "Erro ao inserir";
+                $resposta = true;
+            } $resposta = false;
+ 
+            require_once "../src/View/listar_clientes.php";
         }
     }
 ?>
