@@ -9,6 +9,8 @@
   </head>
   
   <body class="container mt-4">
+    <?php require_once "barra_navegacao.php"; ?>
+    
     <h1>Inserir Cliente</h1>
 
     <form class="mt-3 p-4 border border-light border-2 rounded" action="/cliente/inserir" method="post">

@@ -25,12 +25,26 @@ require_once __DIR__."/vendor/autoload.php";
     $router->post('/exemplo-resultado',
     'Aluno\ProjetoPhp\Controller\ExercicioController::exibirResultado');
 
+    //________________________.
+
+        //rotas Exercício 1 - Lista 1 Refeita
+    $router->get('/indexex1',
+    'Aluno\PropetoPhp\Controller\Lista1Refeita\Ex1\ResultadoEx1::exibir');
+
+    $router->post('/ex1-resultado',
+    'Aluno\PropetoPhp\Controller\Lista1Refeita\Ex1\ResultadoEx1::exibirResultado');
+
+    //________________________.
+
         //rotas BD Clientes
     $router->get('/cliente/novo',
     'Aluno\ProjetoPhp\Controller\ClientesController::abrirFormularioInserir');
 
-    $router->post('cliente/inserir',
+    $router->post('/cliente/inserir',
     'Aluno\ProjetoPhp\Controller\ClientesController::inserirCliente');
+
+    $router->get('/clientes',
+    'Aluno\ProjetoPhp\Controller\ClientesController::abrirListaClientes');
     //Fim Rotas Válidas;
 
     //Checa as entradas do usuário;
