@@ -13,7 +13,7 @@ require_once __DIR__."/vendor/autoload.php";
     Recebe método e path que o usuário informou;*/
     $router = new \Aluno\ProjetoPhp\Router($method, $path);
 
-    //Adicionar rotas válidas:
+    //Adicionar rotas válidas________________________.
     $router->get('/ola-mundo', function(){
        return "Olá Mundo!"; 
     });
@@ -45,7 +45,16 @@ require_once __DIR__."/vendor/autoload.php";
 
     $router->get('/clientes',
     'Aluno\ProjetoPhp\Controller\ClientesController::abrirListaClientes');
-    //Fim Rotas Válidas;
+
+    $router->get('/cliente/alterar/{id}',
+    'Aluno\ProjetoPhp\Controller\ClientesController::abrirFormularioAlterar');
+
+    $router->post('/cliente/editar/{id}',
+    'Aluno\ProjetoPhp\Controller\ClientesController::editarCliente');
+
+    $router->get('/cliente/excluir/{id}',
+    'Aluno\ProjetoPhp\Controller\ClientesController::excluirCliente');
+    //Fim Rotas Válidas________________________.
 
     //Checa as entradas do usuário;
     $result = $router->handler();

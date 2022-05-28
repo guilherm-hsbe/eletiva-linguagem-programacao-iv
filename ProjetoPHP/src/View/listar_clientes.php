@@ -16,12 +16,12 @@
 
         <?php
             if(isset($resposta)){
-                if ($resposta){
+                if ($resposta == true){
                     echo '<div class="alert alert-success alert-dismissible fade show" role="alert">
                             Registro inserido com sucesso!
                             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                         </div>';
-                } echo '<div class="alert alert-danger alert-dismissible fade show" role="alert">
+                } else echo '<div class="alert alert-danger alert-dismissible fade show" role="alert">
                             Erro ao inserir o registro!
                             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                         </div>';
@@ -31,30 +31,24 @@
         <table class="table table-hover table-light">
             <thead>
                 <tr>
-                <th scope="col">#</th>
-                <th scope="col">First</th>
-                <th scope="col">Last</th>
-                <th scope="col">Handle</th>
+                <th scope="col">ID</th>
+                <th scope="col">Nome</th>
+                <th scope="col">Email</th>
+                <th scope="col">Ações</th>
                 </tr>
             </thead>
             <tbody>
+                <?php while($linha = $resultado->fetch(PDO::FETCH_ASSOC)){ ?>
                 <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
+                <th scope="row"><?= $linha['id']?></th>
+                <td><?= $linha['nome']?></td>
+                <td><?= $linha['email']?></td>
+                <td>
+                    <a href="cliente/alterar/<?=$linha['id']?>" class="btn btn-warning">Alterar</a>
+                    <a href="cliente/excluir/<?=$linha['id']?>" class="btn btn-danger">Excluir</a>
+                </td>
                 </tr>
-                <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-                </tr>
-                <tr>
-                <th scope="row">3</th>
-                <td colspan="2">Larry the Bird</td>
-                <td>@twitter</td>
-                </tr>
+                <?php } ?>
             </tbody>
         </table>
     </div>
