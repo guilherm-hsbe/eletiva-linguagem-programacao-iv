@@ -54,6 +54,27 @@ require_once __DIR__."/vendor/autoload.php";
 
     $router->get('/cliente/excluir/{id}',
     'Aluno\ProjetoPhp\Controller\ClientesController::excluirCliente');
+
+    //________________________.
+
+        //rotas BD Produtos
+    $router->get('/produto/novo',
+    'Aluno\ProjetoPhp\Controller\ProdutosController::abrirFormularioInserir');
+
+    $router->post('/produto/inserir',
+    'Aluno\ProjetoPhp\Controller\ProdutosController::inserirProduto');
+
+    $router->get('/produtos',
+    'Aluno\ProjetoPhp\Controller\ProdutosController::abrirListaProdutos');
+
+    $router->get('/produto/alterar/{id}',
+    'Aluno\ProjetoPhp\Controller\ProdutosController::abrirFormularioAlterar');
+
+    $router->post('/produto/editar/{id}',
+    'Aluno\ProjetoPhp\Controller\ProdutosController::editarProduto');
+
+    $router->get('/produto/excluir/{id}',
+    'Aluno\ProjetoPhp\Controller\ProdutosController::excluirProduto');
     //Fim Rotas Válidas________________________.
 
     //Checa as entradas do usuário;

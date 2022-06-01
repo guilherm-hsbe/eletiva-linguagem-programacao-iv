@@ -8,19 +8,19 @@
 
         //Static Function Methods
         public static function abrirFormularioInserir(){
-            require_once "../src/View/inserir_cliente.php";
+            require_once "../src/View/Cliente/inserir_cliente.php";
         }
 
         public static function abrirFormularioAlterar($params){
             $dao = new ClientesDAO();
             $resultado = $dao->consultarPorId($params[1]);
-            require_once "../src/View/alterar_cliente.php";
+            require_once "../src/View/Cliente/alterar_cliente.php";
         }
 
         public static function abrirListaClientes(){
             $dao = new ClientesDAO();
             $resultado = $dao->consultar(); 
-            require_once "../src/View/listar_clientes.php";
+            require_once "../src/View/Cliente/listar_clientes.php";
         }
 
         public static function inserirCliente(){
@@ -37,7 +37,7 @@
 
             ClientesController::abrirListaClientes();
  
-            require_once "../src/View/listar_clientes.php";
+            require_once "../src/View/Cliente/listar_clientes.php";
         }
 
         public static function editarCliente($params){
@@ -55,7 +55,7 @@
 
             ClientesController::abrirListaClientes();
  
-            require_once "../src/View/listar_clientes.php";
+            require_once "../src/View/Cliente/listar_clientes.php";
         }
 
         public static function excluirCliente($params){
@@ -67,7 +67,7 @@
 
             ClientesController::abrirListaClientes();
  
-            require_once "../src/View/listar_clientes.php";
+            require_once "../src/View/Cliente/listar_clientes.php";
         }
     }
 ?>
