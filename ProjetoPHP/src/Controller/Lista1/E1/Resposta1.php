@@ -1,22 +1,19 @@
 <?php
+  namespace Aluno\ProjetoPhp\Controller\Lista1\E1;
 
-  namespace Aluno\PropetoPhp\Controller\Lista1Refeita\Ex1;
-
-  class ResultadoEx1
+  class Resposta1
   {
     public static function exibir(){
-      require_once("../src/Controller/Lista1Refeita/Ex1/indexex1.php");
+      require_once("../src/Controller/Lista1/E1/index1.php");
     }
 
     public static function exibirResultado(){
       $valorpago = $_POST['valorpago']; 
       $valorpreco = $_POST['valorpreco'];
-      echo "O valor pago é: $valorpago <br/> 
-          O preço do produto é: $valorpreco <br/><br/>";
     
       $troco = $valorpago - $valorpreco;
  
-      require_once("../src/Controller/Lista1Refeita/Ex1/indexex1.php");
+      require_once("../src/Controller/Lista1/E1/index1.php");
     }
   }
 ?>

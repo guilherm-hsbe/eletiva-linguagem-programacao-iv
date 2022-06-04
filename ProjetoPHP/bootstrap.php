@@ -27,12 +27,41 @@ require_once __DIR__."/vendor/autoload.php";
 
     //________________________.
 
-        //rotas Exercício 1 - Lista 1 Refeita
-    $router->get('/indexex1',
-    'Aluno\PropetoPhp\Controller\Lista1Refeita\Ex1\ResultadoEx1::exibir');
+    //Lista1
+        //rotas E1
+    $router->get('/index1',
+    'Aluno\ProjetoPhp\Controller\Lista1\E1\Resposta1::exibir');
 
-    $router->post('/ex1-resultado',
-    'Aluno\PropetoPhp\Controller\Lista1Refeita\Ex1\ResultadoEx1::exibirResultado');
+    $router->post('/resposta1',
+    'Aluno\ProjetoPhp\Controller\Lista1\E1\Resposta1::exibirResultado');
+
+        //rotas E2
+    $router->get('/index2',
+    'Aluno\ProjetoPhp\Controller\Lista1\E2\Resposta2::exibir');
+
+    $router->post('/resposta2',
+    'Aluno\ProjetoPhp\Controller\Lista1\E2\Resposta2::exibirResultado');
+
+        //rotas E3
+    $router->get('/index3',
+    'Aluno\ProjetoPhp\Controller\Lista1\E3\Resposta3::exibir');
+
+    $router->post('/resposta3',
+    'Aluno\ProjetoPhp\Controller\Lista1\E3\Resposta3::exibirResultado');
+
+        //rotas E4
+    $router->get('/index4',
+    'Aluno\ProjetoPhp\Controller\Lista1\E4\Resposta4::exibir');
+
+    $router->post('/resposta4',
+    'Aluno\ProjetoPhp\Controller\Lista1\E4\Resposta4::exibirResultado');
+
+        //rotas E5
+    $router->get('/index5',
+    'Aluno\ProjetoPhp\Controller\Lista1\E5\Resposta5::exibir');
+
+    $router->post('/resposta5',
+    'Aluno\ProjetoPhp\Controller\Lista1\E5\Resposta5::exibirResultado');
 
     //________________________.
 
