@@ -13,7 +13,7 @@
     <h1>Exercício 2</h1>
     <h4>Peso</h4>
     
-    <form class="mt-3 p-4 border border-light border-2 rounded" method="post" action="/resposta2">
+    <form class="mt-3 p-4 border border-light border-2 rounded shadow-sm" method="post" action="/resposta2">
       <div class="row">
         <div class="col">
             <label for="valorquilo" class="label-control">
@@ -41,11 +41,13 @@
       </div>
     </form>
 
-    <div class="mt-3 p-4 border border-light border-2 rounded">
-      <?php
-        if (isset($valorquilo,$quantquilo)){
-      ?>
+    <?php
+      if (isset($valorquilo,$quantquilo)){
+    ?>
+    
+    <div class="mt-3 p-4 border border-light border-2 rounded shadow-sm">
       <h4>Resposta</h4>
+
       <?php
         if ($valorquilo <= 0 or $quantquilo <= 0)
             echo ("Um ou mais valores são inválidos!");

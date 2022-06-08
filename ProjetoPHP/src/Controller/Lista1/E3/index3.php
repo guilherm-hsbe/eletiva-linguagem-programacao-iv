@@ -13,7 +13,7 @@
     <h1>Exercício 3</h1>
     <h4>Comparação de Valor</h4>
     
-    <form class="mt-3 p-4 border border-light border-2 rounded" method="post" action="resposta3">
+    <form class="mt-3 p-4 border border-light border-2 rounded shadow-sm" method="post" action="resposta3">
       <div class="row">
         <div class="col">
             <label for="valor" class="label-control">
@@ -26,24 +26,27 @@
 
       <div class="row">
         <div class="col mt-4">
-            <button type="submit" class="btn btn-warning">
+            <button type="submit" class="btn btn-info">
               Enviar
             </button>
         </div>
       </div>
     </form>
 
-    <div class="mt-3 p-4 border border-light border-2 rounded">
-      <?php
-        if (isset($valor)){
-      ?>
+    
+    <?php
+      if (isset($valor)){
+    ?>
+
+    <div class="mt-3 p-4 border border-light border-2 rounded shadow-sm">
       <h4>Resposta</h4>
+
       <?php
         echo "Valor informado: $valor<br/>";
 
         if ($valor > 10)
             echo "O valor é maior que 10!";
-  
+
         elseif ($valor < 10)
             echo "O valor é menor que 10!";
         }

@@ -12,7 +12,7 @@
     <h2>Exercício 1</h2>
     <h4>Valores</h4>
 
-    <form class="mt-3 p-4 border border-light border-2 rounded" method="post" action="/resposta1">
+    <form class="mt-3 p-4 border border-light border-2 rounded shadow-sm" method="post" action="/resposta1">
       <div class="row">
         <div class="col">
             <label for="valorpago" class="label-control">
@@ -33,17 +33,18 @@
 
       <div class="row">
         <div class="col mt-4">
-            <button type="submit" class="btn btn-warning">
+            <button type="submit" class="btn btn-success">
               Enviar
             </button>
         </div>
       </div>
     </form>
+  
+    <?php
+      if (isset($troco, $valorpago, $valorpreco)){
+    ?>
 
-    <div class="mt-3 p-4 border border-light border-2 rounded">
-      <?php
-        if (isset($troco, $valorpago, $valorpreco)){
-      ?>
+    <div class="mt-3 p-4 border border-light border-2 rounded shadow-sm">
       <h4>Resposta</h4>
 
       <?php

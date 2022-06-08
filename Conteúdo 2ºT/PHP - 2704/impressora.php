@@ -1,4 +1,4 @@
-<?php
+    <?php
     //Usa-se $this para acessar propriedades e métodos que fazem escopo de um objeto;
     //Usa-se $self para acessar propriedades e métodos que fazem parte do escopo da classe;
 

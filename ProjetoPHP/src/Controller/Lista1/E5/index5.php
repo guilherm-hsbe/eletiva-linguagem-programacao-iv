@@ -57,11 +57,14 @@
       </div>
     </form>
 
-    <div class="mt-3 p-4 border border-light border-2 rounded">
-      <?php
-        if (isset($n1,$n2,$n3,$n4)){
-      ?>
-      <h4>Resposta</h4>
+    
+    <?php
+      if (isset($n1,$n2,$n3,$n4)){
+    ?>
+
+    <div class="mt-3 p-4 border border-light border-2 rounded"> 
+      h4>Resposta</h4>
+      
       <?php
         echo "Primeira Nota: $n1<br/>
         Segunda Nota: $n2<br/>
